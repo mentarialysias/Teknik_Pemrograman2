@@ -20,17 +20,13 @@ import java.util.Scanner;
  */
 
 public class BigNumber {
-
     public static void main(String[] args) {
-        // Membuat scanner baru
-        Scanner data = new Scanner(System.in);
+        Scanner data = new Scanner(System.in); //membaca data dari perangkat masukan
         
-        // Membuat var dengan tipe data BigInteger dan memasukkan scanner ke dalamnya
-        BigInteger a = data.nextBigInteger();
+      //variabel a dan b Bertipe bigInteger, nilainya didapat dari data masukan
+        BigInteger a = data.nextBigInteger(); 
         BigInteger b = data.nextBigInteger();
-
         System.out.println(a.add(b)); //menampilkan hasil dari a + b
         System.out.println(a.multiply(b)); //menampilkan hasil dari a*b
     }
-    
 }
